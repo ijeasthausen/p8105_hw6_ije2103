@@ -1,0 +1,11 @@
+---
+title: "p8105_hw6_ije2103"
+author: "Imaani Easthausen"
+date: "November 14, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
