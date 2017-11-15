@@ -1,11 +1,71 @@
 ---
 title: "p8105_hw6_ije2103"
-author: "Imaani Easthausen"
+author: "Imaani Easthausen & MeOak Place"
 date: "November 14, 2017"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(plotly)
+library(ggridges)
+library(stringr)
+library(forcats)
+library(ggplot2)
 ```
 
+#Introduction
+For this project, we will work with the 
+
+We will limit the data to restarants with an inspection grade of "A," "B," or "C," and with known borough.  
+```{r}
+restaurant_inspections = read_csv("DOHMH_New_York_City_Restaurant_Inspection_Results.csv.gz", 
+                           col_types = cols(building = col_character()),
+                           na = c("NA", "N/A")) %>%
+  filter(grade %in% c("A", "B", "C"), boro != "Missing") %>% 
+  mutate(boro = str_to_title(boro))
+
+```
+
+```{r}
+restaurant_inspections %>%
+  group_by(boro) %>%
+  plot_ly(y = ~score, color = ~boro, type = "box") 
+```
+
+
+
+
+
+
+
+
+```{r}
+restaurant_inspections %>%
+  group_by(boro) %>%
+  count(grade) %>%
+  ungroup() %>%
+  mutate(boro = fct_reorder(boro, n)) %>%
+  plot_ly(x = ~boro, y = ~n, color = ~grade, type = "bar")
+
+
+```
+
+```{r}
+remove_non_longitudinal_data = restaurant_inspections %>%
+  group_by(camis) %>%
+  count(inspection_date) %>%
+  filter(n > 3) %>%
+  inner_join(restaurant_inspections, by = "camis") %>%
+  select(camis, inspection_date.x, score) %>% 
+  unique() %>%
+  plot_ly(x = ~inspection_date.x, y = ~score, group_by = ~camis,
+            type = 'scatter', 
+            alpha = 0.25,
+            mode = 'lines') %>%
+  layout(xaxis = list(range = c(as.Date('2012-01-01'), as.Date('2019-01-01'))))
+
+remove_non_longitudinal_data
+
+```
