@@ -16,7 +16,7 @@ library(ggplot2)
 ```
 
 #Introduction
-For this project, we will work with the 
+For this project, we will work with a subset of the NYC restaurant inspections dataset accessed from https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe in October 2017. 
 
 We will limit the data to restarants with an inspection grade of "A," "B," or "C," and with known borough.  
 ```{r}
@@ -27,7 +27,7 @@ restaurant_inspections = read_csv("DOHMH_New_York_City_Restaurant_Inspection_Res
   mutate(boro = str_to_title(boro))
 
 ```
-
+Below we present boxplots of the distributions of inspection scores by borough. We observe that accross all boroughs the data are substantially right skewed. 
 ```{r}
 restaurant_inspections %>%
   group_by(boro) %>%
@@ -40,7 +40,7 @@ restaurant_inspections %>%
 
 
 
-
+Below we present a plot showing the frequency of "A," "B," and "C" grades received in each borough. 
 ```{r}
 restaurant_inspections %>%
   group_by(boro) %>%
@@ -51,21 +51,17 @@ restaurant_inspections %>%
 
 
 ```
-
+Below, we present a time series plot showing the inspection score over time for each restaurant where one line represents one restaurant. We observe substantial instability in inspection score over time. Baseline inspection score does not appear to predict future inspection score.
 ```{r}
-remove_non_longitudinal_data = restaurant_inspections %>%
+restaurant_inspections %>%
   group_by(camis) %>%
-  count(inspection_date) %>%
-  filter(n > 3) %>%
-  inner_join(restaurant_inspections, by = "camis") %>%
-  select(camis, inspection_date.x, score) %>% 
-  unique() %>%
-  plot_ly(x = ~inspection_date.x, y = ~score, group_by = ~camis,
+  filter(!duplicated(inspection_date)) %>%
+  select(camis, inspection_date, score) %>%
+  plot_ly(x = ~inspection_date, y = ~score, group_by = ~camis,
             type = 'scatter', 
             alpha = 0.25,
-            mode = 'lines') %>%
+            mode = 'lines+markers') %>%
   layout(xaxis = list(range = c(as.Date('2012-01-01'), as.Date('2019-01-01'))))
 
-remove_non_longitudinal_data
 
 ```
