@@ -5,15 +5,9 @@ date: "November 14, 2017"
 output: html_document
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-library(plotly)
-library(ggridges)
-library(stringr)
-library(forcats)
-library(ggplot2)
-library(magrittr)
 
 library(tidyverse)
 library(tidytext)
@@ -33,6 +27,7 @@ library(jsonlite)
 library(knitr)
 library(knitLatex)
 library(magrittr)
+library(plotly)
 library(readr)
 library(readxl)
 library(reshape2)

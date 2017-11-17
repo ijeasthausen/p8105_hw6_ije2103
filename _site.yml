@@ -6,7 +6,7 @@ navbar:
     - text: "flexdashboard"
       href: hw6_flexdashboard.html
     - text: "shiny-enabled dashboard"
-      href: shiny_dashboard_template.html
+      href: https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/
     - icon: fa-github fa-lg
       href:  https://github.com/ijeasthausen/p8105_hw6_ije2103
 output:

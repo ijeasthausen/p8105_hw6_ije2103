@@ -11,9 +11,9 @@ Here are the relevant processing steps ...
 
 
 ### Links!
-The link to our dashboard for Problem 1 is [here]().
+The link to our dashboard for Problem 1 is [here](https://ijeasthausen.io/p8105_hw6_ije2103/hw6_flexdashboard_html).
 
-The link to our dashboard for Problem 2 is [here]().
+The link to our dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
 
 The link to our GitHub repo that underlies our dashboards and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
 
