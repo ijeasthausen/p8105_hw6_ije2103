@@ -1,11 +1,11 @@
 ---
 title: "NYC Restaurant Inspections"
+href: (https://ijeasthausen.io/p8105_hw6_ije2103/)"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
-
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
