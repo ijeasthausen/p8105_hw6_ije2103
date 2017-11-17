@@ -2,7 +2,6 @@
 title: "Data Science I (P8105)"
 ---
 
-# *Dashboards*
 
 ### Collaborators:
 
@@ -10,14 +9,26 @@ Imaani Easthausen (UNI:  ije2103)
 
 MeOak Place (UNI:  mp3652)
 
+###Introduction
+For this project, we will work with a subset of the NYC restaurant inspections dataset accessed from https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe in October 2017. 
+
+###Data Cleaning
+The data are limited to restarants with an inspection grade of "A," "B," or "C." Observations with unknown boroughs were removed from the data. 
+
+###Results 
+Across all boroughs the data are substantially right skewed. Across boroughs, restaurants appear to have similar ratios of the frequency of inspection grades. 
+
+Time series plots showing the inspection score over time demonstrate substantial instability in inspection score over time. Baseline inspection score does not appear to predict future inspection score.
+
 ### Links:
+Visualizations of these results, source code, and the datasets used in these analyses are available at the links below. 
 
-The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.github.io/p8105_hw6_ije2103/hw6_flexdashboard.html).
+* The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.github.io/p8105_hw6_ije2103/hw6_flexdashboard.html).
 
-The link to our shiny-enabled dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
+* The link to our shiny-enabled dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
 
-The link to our GitHub repo that underlies our Problem 1 dashboard and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
+* The link to our GitHub repo that underlies our Problem 1 dashboard and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
 
-The link to our GitHub repo that underlies our Problem 2 dashboard is [here](https://github.com/meoak/p8105_hw6_shiny_nyc_rest_insp).
+* The link to our GitHub repo that underlies our Problem 2 dashboard is [here](https://github.com/meoak/p8105_hw6_shiny_nyc_rest_insp).
 
 *NOTE:  The aforementioned links may also be found on the navigation bar at the top of this page.*
