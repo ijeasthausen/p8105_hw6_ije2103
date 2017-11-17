@@ -1,0 +1,20 @@
+---
+title: "DSI HW 6"
+---
+
+### Desciption of Data
+Here is a desription of our data ... 
+
+
+### Relevant Processing Steps
+Here are the relevant processing steps ...
+
+
+### Links!
+The link to our dashboard for Problem 1 is [here]().
+
+The link to our dashboard for Problem 2 is [here]().
+
+The link to our GitHub repo that underlies our dashboards and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
+
+*NOTE:  All of these links may also be found on the navgivation bar at the top of this page.*

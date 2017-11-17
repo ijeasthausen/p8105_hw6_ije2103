@@ -1,0 +1,13 @@
+name: "Yay!  DSI HW 6!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "flexdashboard"
+      href: hw6_flexdashboard.html
+    - text: "shiny-enabled dashboard"
+      href: shiny_dashboard_template.html
+    - icon: fa-github fa-lg
+      href:  https://github.com/ijeasthausen/p8105_hw6_ije2103
+output:
+  html_document
