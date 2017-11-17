@@ -1,20 +1,21 @@
 ---
-title: "DSI HW 6"
+title: "p8105_hw6"
 ---
 
-### Desciption of Data
-Here is a desription of our data ... 
+### Collaborators:
 
+Imaani Easthausen (UNI:  ije2103)
 
-### Relevant Processing Steps
-Here are the relevant processing steps ...
+MeOak Place (UNI:  mp3652)
 
+### Links:
 
-### Links!
-The link to our dashboard for Problem 1 is [here](https://ijeasthausen.io/p8105_hw6_ije2103/hw6_flexdashboard_html).
+The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.io/p8105_hw6_ije2103/hw6_flexdashboard_html).
 
-The link to our dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
+The link to our shiny-enabled dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
 
-The link to our GitHub repo that underlies our dashboards and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
+The link to our GitHub repo that underlies our Problem 1 dashboard and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
 
-*NOTE:  All of these links may also be found on the navgivation bar at the top of this page.*
+The link to our GitHub repo that underlies our Problem 2 dashboard is [here](https://github.com/meoak/p8105_hw6_shiny_nyc_rest_insp).
+
+*NOTE:  The aforementioned links may also be found on the navigation bar at the top of this page.*
