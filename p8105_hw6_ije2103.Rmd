@@ -5,21 +5,44 @@ date: "November 14, 2017"
 output: html_document
 ---
 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 library(tidyverse)
-library(plotly)
-library(ggridges)
-library(stringr)
+library(tidytext)
+library(curl)
+library(data.table)
+library(dplyr)
+library(DT)
 library(forcats)
 library(ggplot2)
+library(ggridges)
+library(ggthemes)
+library(haven)
+library(htmltools)
+library(httr)
+library(janitor)
+library(jsonlite)
+library(knitr)
+library(knitLatex)
+library(magrittr)
+library(plotly)
+library(readr)
+library(readxl)
+library(reshape2)
+library(rvest)
+library(stringr)
+library(tools)
+library(viridisLite)
+library(viridis)
 ```
 
 #Introduction
 For this project, we will work with a subset of the NYC restaurant inspections dataset accessed from https://dev.socrata.com/foundry/data.cityofnewyork.us/9w7m-hzhe in October 2017. 
 
 We will limit the data to restarants with an inspection grade of "A," "B," or "C," and with known borough.  
-```{r}
+```{r cache = TRUE}
 restaurant_inspections = read_csv("DOHMH_New_York_City_Restaurant_Inspection_Results.csv.gz", 
                            col_types = cols(building = col_character()),
                            na = c("NA", "N/A")) %>%
