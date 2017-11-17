@@ -32,3 +32,4 @@ viridis
 bindrcpp
 plotly
 shiny
+rsconnect

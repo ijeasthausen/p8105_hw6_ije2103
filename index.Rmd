@@ -25,7 +25,7 @@ Visualizations of these results, source code, and the datasets used in these ana
 
 * The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.github.io/p8105_hw6_ije2103/hw6_flexdashboard.html).
 
-* The link to our shiny-enabled dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
+* The link to our shiny-enabled dashboard for Problem 2 is [here](https://ijeasthausen.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
 
 * The link to our GitHub repo that underlies our Problem 1 dashboard and the webpage is [here](https://github.com/ijeasthausen/p8105_hw6_ije2103).
 
