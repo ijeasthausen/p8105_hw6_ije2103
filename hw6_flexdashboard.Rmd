@@ -50,7 +50,8 @@ restaurant_inspections = read_csv("DOHMH_New_York_City_Restaurant_Inspection_Res
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Inspection score over time by restaurant
+### Distributions of inspection scores by borough
+
 
 ```{r}
 restaurant_inspections %>%
@@ -71,7 +72,7 @@ restaurant_inspections %>%
   plot_ly(x = ~boro, y = ~n, color = ~grade, type = "bar")
 ```
 
-### Distributions of inspection scores by borough
+### Inspection score over time by restaurant
 
 ```{r}
 restaurant_inspections %>%
