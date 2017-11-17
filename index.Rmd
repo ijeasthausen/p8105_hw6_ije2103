@@ -1,12 +1,18 @@
 ---
-title: "p8105_hw6"
+title: "Data Science I (P8105)"
 ---
 
-Collaborators:
+# *Dashboards*
+
+### Collaborators:
+
 Imaani Easthausen (UNI:  ije2103)
+
 MeOak Place (UNI:  mp3652)
 
-The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.io/p8105_hw6_ije2103/hw6_flexdashboard_html).
+### Links:
+
+The link to our flex_dashboard for Problem 1 is [here](https://ijeasthausen.io/p8105_hw6_ije2103/hw6_flexdashboard.html).
 
 The link to our shiny-enabled dashboard for Problem 2 is [here](https://meoak.shinyapps.io/p8105_hw6_shiny_nyc_rest_insp/).
 
@@ -14,4 +20,4 @@ The link to our GitHub repo that underlies our Problem 1 dashboard and the webpa
 
 The link to our GitHub repo that underlies our Problem 2 dashboard is [here](https://github.com/meoak/p8105_hw6_shiny_nyc_rest_insp).
 
-*NOTE:  All of these links may also be found on the navgivation bar at the top of this page.*
+*NOTE:  The aforementioned links may also be found on the navigation bar at the top of this page.*

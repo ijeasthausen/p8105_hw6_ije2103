@@ -1,6 +1,8 @@
 ---
-title: "p8105_hw6"
+title: "Data Science I (P8105)"
 ---
+
+# *Dashboards*
 
 ### Collaborators:
 
