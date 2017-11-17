@@ -16,7 +16,7 @@ For this project, we will work with a subset of the NYC restaurant inspections d
 The data are limited to restarants with an inspection grade of "A," "B," or "C." Observations with unknown boroughs were removed from the data. 
 
 ###Results 
-Across all boroughs the data are substantially right skewed. Across boroughs, restaurants appear to have similar ratios of the frequency of inspection grades. 
+Across all boroughs the data are substantially right skewed. Across boroughs, restaurants appear to have similar ratios of the frequency of inspection grades, although Staten Island may have an increased proporation of "B" grades when compared with other boroughs. Additional hypothesis testing would be needed to confirm if this is a statistically significant increase.
 
 Time series plots showing the inspection score over time demonstrate substantial instability in inspection score over time. Baseline inspection score does not appear to predict future inspection score.
 
